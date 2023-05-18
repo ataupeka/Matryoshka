@@ -5,11 +5,13 @@
 
 
 :root{
-    --orange:#FF7800;
+    --green: #bac34e;
     --black:#130F40;
+    --white:#fff;
     --light-color:#666;
+    --light-bg: #f3f3f3;
     --box-shadow: 0 0.5rem  1rem rgba(0, 0, 0, 1);
-    --border: 0.2rem solid rgba(0, 0, 0, 1);
+    --border: 0.1rem solid rgba(0, 0, 0, 1);
     --outline: 1rem solid rgba(0, 0, 0, 1);
     --outline-hover: 2rem solid var(--black);
 }
@@ -23,6 +25,14 @@
   text-decoration: none;
   text-transform: capitalize;
   transition: all .2s linear;
+}
+
+
+
+@mixin grid($val){
+    display: grid;
+    grid-temlate-columns: repeat(auto-fit, minmax($val,1fr));
+    gap: 1.5rem;
 }
 
 
@@ -45,18 +55,19 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 9%;
-    background: #fff;
+    background:var(--white);
     box-shadow: var(--box-shadow);
 }
 
-.header .logo{
+.logo{
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: bolder;
     color:var(--black);
 }
 
 .icon-logo{
-   background-color:  var(--orange);
+   background-color:  var(--green);
+   padding-right: .5rem;
    height: 35px;
    width: 30px;
 }
@@ -64,13 +75,13 @@ body{
 .header .navbar a{
     font-size: 1.7rem;
     margin: 0 1rem;
-    color: var(--black);
+    color: var(--light-color);
 
 
 }
 
 .header .navbar a:hover{
-    color: var(--orange);
+    color: var(--green);
 
 }
 .header .icons{
@@ -82,14 +93,13 @@ body{
     display: flex; 
     justify-content: center;
     align-items: center;
-
     height: 4.5rem;
     width: 4.5rem;
     line-height: 4.5rem;
     border-radius: .5rem;
     background: #eee;
-    color: var(--black);
-    font-size: 2rem;
+    color: var(--light-color);
+    font-size: 2.5rem;
     margin-right: .3rem;
     cursor: pointer;
     text-align: center;
@@ -97,7 +107,7 @@ body{
 }
 
 .header .icons div:hover{
-background: var(--orange);
+background: var(--green);
 color: #fff;
 
 
@@ -110,4 +120,140 @@ color: #fff;
  #menu-btn{
     display:none;
 
+ }
+ .search-form{
+    position:absolute;
+    top: -115%;
+    right: 2rem;
+    width: 50rem;
+    border-radius:  0.5rem;
+    display: flex;
+    align-items: center;
+    height: 5.5rem;
+    box-shadow: var(--border-shadow);
+    background: var(--white);
+
+
+ }
+
+
+ .active{
+    top:115%;
+
+ }
+.shopping-cart{
+    position:absolute;
+    top:115%;
+    right: 2rem;
+    background: var(--white);
+    border-radius: .5rem;
+    box-shadow:var(--border-shadow);
+    width:35rem;
+    padding:2rem;
+
+
+
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+
+
+
+}
+
+.fa-times{
+    position: absolute;
+    top:50%;
+    right:2rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: var(--light-color);
+    cursor: pointer;
+
+
+
+}
+.fa-times:hover{
+    color:var(--green);
+}
+
+img{
+    height: 10rem;
+}
+.content h3{
+    font-size: 1.7rem;
+    padding-bottom:  .5rem;
+    color: var(--black);
+
+
+}
+
+
+.content span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+
+}
+
+.multiply{
+    margin:0 .5rem;
+
+}
+
+.total{
+    color: var(--light-color);
+    text-align: center;
+    font-size: 2.2rem;
+
+}
+
+.btn{
+   margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    background: var(--green);
+    color: var(--white);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: var(--black) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ input{
+    height: 100%;
+    width: 100% ;
+    padding: 0 1.2rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform:  none;
+
+ }
+ label{
+    font-size: 2.5rem;
+    margin-right: 1.7rem;
+    cursor: pointer;
+    color: var(--light-color);
+ }
+ label:hover{
+    color: var(--green);
  }
