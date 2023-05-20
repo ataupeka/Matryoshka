@@ -65,12 +65,7 @@ body{
     color:var(--black);
 }
 
-.icon-logo{
-   background-color:  var(--green);
-   padding-right: .5rem;
-   height: 35px;
-   width: 30px;
-}
+
 
 .header .navbar a{
     font-size: 1.7rem;
@@ -330,3 +325,74 @@ transition: 0.4s linear;
 
  }
 
+
+
+ @media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+ }
+
+ @media (max-width:768px){
+    html{
+        font-size: 55%;
+    }
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+.navbar{
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-top: var(--border);
+    border-bottom: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+
+.navbar__active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);  
+}
+
+
+a{
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: var(--light-bg);
+    font-size: 2rem;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+
+.search-form{
+    width: 100%;
+    right: 0;
+    border-radius: 0;
+}
+
+
+.search-form__active{
+   top:99%;
+   border-top: var(--border);
+   border-bottom: var(--border);
+}
+
+ }
+
+
+
+
+ @media (max-width:450px){
+    html{
+        font-size: 55%;
+    }
+ }
