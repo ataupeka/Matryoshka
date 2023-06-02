@@ -341,7 +341,7 @@ section{
 }
 .box-container{
  display: grid;
- grid-template-columns: repeat(3, 1fr);
+ grid-template-columns: repeat(4, 1fr);
  gap: 1.5rem;
 }
 .box{
@@ -375,6 +375,19 @@ color: var(--green);
 }
 
 
+form input[type="email"]{
+    width:100%;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    margin: 1rem 0;
+    text-transform: none;
+}
+
+.payment{
+    width: 100%;
+    margin-top: 2rem;
+}
 
 
 
