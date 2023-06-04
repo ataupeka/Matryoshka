@@ -215,21 +215,36 @@ img{
 
 }
 
-.btn{
+footer-btn{
    margin-top: 1rem;
     display: inline-block;
-    padding: .8rem 3rem;
+    padding: 0.5rem 1rem;
     background: var(--green);
     color: var(--white);
     font-size: 1.7rem;
     cursor: pointer;
     text-align: center;
-    width: 100%;
+    width:100%;
 }
-.btn:hover{
+.footer-btn:hover{
     background: var(--black) ;
 }
 
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3rem;
+    background: var(--green);
+    color: var(--white);
+    font-size: 1.7rem;
+    cursor: pointer;
+    text-align: center;
+    width:20%; 
+}
+
+.btn:hover{
+    background: var(--black) ;
+}
 
 .login-form{
     position:absolute;
