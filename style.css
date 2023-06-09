@@ -801,6 +801,37 @@ overflow: hidden;
 
 
 
+.gallery-box-container{
+    display: grid;
+}
+
+.box{
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+.gallery-box-img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.gallery-box-img:hover{
+transform: scale(1.2);
+}
+
+.gallery-box-a{
+    font-size: 2.5rem;
+    color: var(--white);
+    margin: 0 1.5rem;
+
+}
+.gallery-box-a:hover{
+color: var(--green);
+}
 
 
 
