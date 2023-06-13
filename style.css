@@ -1249,4 +1249,11 @@ a{
     display: flex;
     flex-direction: column;    
 }
+.contact-icons-container{
+    
+        display: flex;
+        flex-direction: column;    
+    
+}
+     
  }
